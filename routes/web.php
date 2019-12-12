@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('/user','UserController');
+    Route::get('/user/create/estudiante','UserController@estudiante');
+    Route::get('/user/create/docente','UserController@docente');
+    Route::get('/user/create/externo','UserController@externo');
+    Route::resource('/adm','RolCuController');
+    Route::resource('/rol','RolController');
+    Route::resource('/cu','CaseUseController');
+    Route::get('/home', 'HomeController@index')->name('home');
+});
