@@ -54,7 +54,7 @@ class User extends Authenticatable
         foreach($this->role->caso_usos as $cu){
             if($cu->pivot->cu_id == $id){
                 if($cu->pivot->escribir == 1){
-                    $rsp['leer'] = true;
+                    $rsp['escribir'] = true;
                     $c++;
                 }
                 if($cu->pivot->leer == 1){
@@ -62,11 +62,11 @@ class User extends Authenticatable
                     $c++;
                 }
                 if($cu->pivot->eliminar == 1){
-                    $rsp['leer'] = true;
+                    $rsp['eliminar'] = true;
                     $c++;
                 }
                 if($cu->pivot->editar == 1){
-                    $rsp['leer'] = true;
+                    $rsp['editar'] = true;
                     $c++;
                 }
                 $rsp['total'] = $c;
