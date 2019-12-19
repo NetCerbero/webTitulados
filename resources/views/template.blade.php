@@ -163,7 +163,7 @@
                   <!-- Gestión de area de estudio -->
                   <li class=" ">
                      <a href="#dashboard3" title="Dashboard" data-toggle="collapse">
-                        <em class="icon-speedometer"></em>
+                        <em class="icon-book-open"></em>
                         <span data-localize="sidebar.nav.DASHBOARD">Areas de Estudio</span>
                      </a>
                      <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard3">
@@ -171,32 +171,32 @@
                         <li class=""><a href="{{url('/area-estudio/create')}}" title="Crear Nueva Area"><span>Crear Area</span></a></li>
                      </ul>
                   </li>
-                  <!-- Gestión de situacion de empleo -->
-                  <li class=" ">
-                     <a href="#dashboard4" title="Dashboard" data-toggle="collapse">
-                        <em class="icon-speedometer"></em>
-                        <span data-localize="sidebar.nav.DASHBOARD">Situaciones de Empleo</span>
-                     </a>
-                     <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard4">
-                        <li class=""><a href="{{url('/situacion-empleo')}}" title="Listar Areas"><span>Listar Situaciones</span></a></li>
-                        <li class=""><a href="{{url('/situacion-empleo/create')}}" title="Crear Nueva Area"><span>Crear Situacion</span></a></li>
-                     </ul>
-                  </li>
                   <!-- Gestión de grados academicos -->
                   <li class=" ">
-                     <a href="#dashboard5" title="Dashboard" data-toggle="collapse">
-                        <em class="icon-speedometer"></em>
+                     <a href="#dashboard4" title="Dashboard" data-toggle="collapse">
+                        <em class="icon-book-open"></em>
                         <span data-localize="sidebar.nav.DASHBOARD">Grados Académicos</span>
                      </a>
-                     <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard5">
+                     <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard4">
                         <li class=""><a href="{{url('/grado-academico')}}" title="Listar Areas"><span>Listar Grados</span></a></li>
                         <li class=""><a href="{{url('/grado-academico/create')}}" title="Crear Nueva Area"><span>Crear Grado</span></a></li>
+                     </ul>
+                  </li>
+                  <!-- Gestión de situacion de empleo -->
+                  <li class=" ">
+                     <a href="#dashboard5" title="Dashboard" data-toggle="collapse">
+                        <em class="icon-briefcase"></em>
+                        <span data-localize="sidebar.nav.DASHBOARD">Situaciones de Empleo</span>
+                     </a>
+                     <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard5">
+                        <li class=""><a href="{{url('/situacion-empleo')}}" title="Listar Areas"><span>Listar Situaciones</span></a></li>
+                        <li class=""><a href="{{url('/situacion-empleo/create')}}" title="Crear Nueva Area"><span>Crear Situacion</span></a></li>
                      </ul>
                   </li>
                   <!-- Gestión de regimen regulatorio -->
                   <li class=" ">
                      <a href="#dashboard6" title="Dashboard" data-toggle="collapse">
-                        <em class="icon-speedometer"></em>
+                        <em class="icon-briefcase"></em>
                         <span data-localize="sidebar.nav.DASHBOARD">Regimen Regulatorio</span>
                      </a>
                      <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard6">
@@ -207,7 +207,7 @@
                   <!-- Gestión de sector industrial -->
                   <li class=" ">
                      <a href="#dashboard7" title="Dashboard" data-toggle="collapse">
-                        <em class="icon-speedometer"></em>
+                        <em class="icon-briefcase"></em>
                         <span data-localize="sidebar.nav.DASHBOARD">Sectores Industriales</span>
                      </a>
                      <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard7">
@@ -218,7 +218,7 @@
                   <!-- Gestión de nivel de cargo laboral -->
                   <li class=" ">
                      <a href="#dashboard8" title="Dashboard" data-toggle="collapse">
-                        <em class="icon-speedometer"></em>
+                        <em class="icon-briefcase"></em>
                         <span data-localize="sidebar.nav.DASHBOARD">Niveles de Cargos Laborales</span>
                      </a>
                      <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard8">
@@ -229,7 +229,7 @@
                   <!-- Gestión de areas de cargo laboral -->
                   <li class=" ">
                      <a href="#dashboard9" title="Dashboard" data-toggle="collapse">
-                        <em class="icon-speedometer"></em>
+                        <em class="icon-briefcase"></em>
                         <span data-localize="sidebar.nav.DASHBOARD">Areas de Cargo Laboral</span>
                      </a>
                      <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard9">
