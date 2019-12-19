@@ -19,9 +19,9 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <label>Nombre del grado académico:</label>
+                            <label>Nombre:</label>
                             <input name="grado" id="grado" class="form-control" type="text"
-                                   placeholder="Ej: Licenciatura" value="{{$grado->grado}}">
+                                   placeholder="Ej: Licenciatura" value="{{$grado->grado}}" maxlength="50" readonly>
                         </div>
                         <div class="d-flex justify-content-end">
                             <input type="submit" class="btn btn-primary" value="Guardar Cambios">

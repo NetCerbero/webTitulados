@@ -1,10 +1,12 @@
 @extends('template')
-@section('style')
 
+@section('style')
 @endsection
+
 @section('title')
-    <h2>Gestión de Grados Académicos</h2>
+    <h2>Niveles de cargos laborales</h2>
 @endsection
+
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -16,10 +18,10 @@
                 @endif
                 <div class="card card-default">
                     <div class="card-header">
-                        <h3>Lista de Grados Académicos</h3>
+                        <h3>Lista de Niveles de Cargos</h3>
                         <hr>
-                        <a href="{{route('grado-academico.create')}}" class="btn btn-success">
-                            Registrar nuevo grado académico
+                        <a href="{{route('nivel-cargo.create')}}" class="btn btn-success">
+                            <span class="oi oi-plus"></span> Registrar nuevo nivel
                         </a>
                     </div>
                     <div class="card-body">
@@ -29,24 +31,26 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Nombre</th>
+                                    <th>Descripción</th>
                                     <th>Acciones</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($grados as $grado)
+                                @foreach($niveles as $nivel)
                                 <tr>
-                                    <td>{{$grado->id}}</td>
-                                    <td>{{$grado->grado}}</td>
+                                    <td>{{$nivel->id}}</td>
+                                    <td>{{$nivel->nombre}}</td>
+                                    <td>{{$nivel->descripcion}}</td>
                                     <td>
-                                        <a class="badge badge-info" href="{{route('grado-academico.show', $grado->id)}}">
+                                        <a class="badge badge-info" href="{{route('nivel-cargo.show', $nivel->id)}}">
                                             Ver
                                         </a>
                                         |
-                                        <a class="badge badge-warning" href="{{route('grado-academico.edit', $grado->id)}}">
+                                        <a class="badge badge-warning" href="{{route('nivel-cargo.edit', $nivel->id)}}">
                                             Editar
                                         </a>
                                         |
-                                        <a class="badge badge-danger" href="{{route('grado-academico.destroy', $grado->id)}}">
+                                        <a class="badge badge-danger" href="{{route('nivel-cargo.destroy', $nivel->id)}}">
                                             Eliminar
                                         </a>
                                     </td>

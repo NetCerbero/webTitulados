@@ -34,6 +34,13 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/modalidad/create/trabajo','ModalidadController@trabajo');
     Route::get('/modalidad/create/examen','ModalidadController@examen');
     Route::get('/modalidad/create/directo','ModalidadController@directo');
-    Route::get('/modalidad/create/externo','ModalidadController@externo');
-
+    Route::get('/modalidad/create/externo','ModalidadController@externo');    
+    
+    // rutas de Luis Alejandro :v
+    Route::resource('/sector','SectorController'); // sectores industriales
+    Route::resource('/regimen','RegimenController'); // regimenes regulatorios
+    Route::resource('/area-estudio','AreaEstudioController'); // area de estudio
+    Route::resource('/situacion-empleo','SituacionEmpleoController'); // situacion de empleo
+    Route::resource('/area-cargo','AreaCargoController'); // area del cargo laboral
+    Route::resource('/nivel-cargo','NivelCargoController'); // nivel del cargo laboral
 });
