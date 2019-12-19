@@ -26,4 +26,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('/rol','RolController');
     Route::resource('/cu','CaseUseController');
     Route::get('/home', 'HomeController@index')->name('home');
+
+    // rutas sobre grados académicos
+    Route::resource('/grado-academico','GradoAcademicoController');
+
 });
