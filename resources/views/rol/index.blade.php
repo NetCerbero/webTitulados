@@ -15,7 +15,13 @@
                <div class="col">
                   <!-- START card-->
                   <div class="card card-default">
-                     <div class="card-header">Lista de roles</div>
+                     <div class="card-header">
+                         <h3>Lista de roles</h3>
+                         <hr>
+                         <a href="{{route('rol.create')}}" class="btn btn-success">
+                             Registrar nuevo rol
+                         </a>
+                     </div>
                      <div class="card-body">
                         <!-- START table-responsive-->
                         <div class="table-responsive">
