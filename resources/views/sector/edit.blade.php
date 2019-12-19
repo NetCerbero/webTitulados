@@ -21,18 +21,15 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <label for="nombre">Nombre del sector:</label>
+                            <label for="nombre">Nombre:</label>
                             <input name="nombre" id="nombre" class="form-control" type="text"
-                                   placeholder="Ej: Hidrocarburos"
-                                    value="{{$sector->nombre}}"
-                            >
+                                   placeholder="Ej: Hidrocarburos" value="{{$sector->nombre}}" maxlength="50" required>
                         </div>
                         <div class="form-group">
                             <label for="descripcion">Descripción:</label>
                             <input name="descripcion" id="descripcion" class="form-control" type="text"
                                    placeholder="Ej: Empresas dedicadas a la explotación de recursos naturales hidrocarburíferos"
-                                   value="{{$sector->descripcion}}"
-                            >
+                                   value="{{$sector->descripcion}}" maxlength="255">
                         </div>
                         <div class="d-flex justify-content-end">
                             <input type="submit" class="btn btn-primary" value="Guardar Cambios">

@@ -21,14 +21,15 @@
                             <form method="POST" action="{{route('area-estudio.store')}}">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="nombre">Nombre del área de estudio:</label>
+                                    <label for="nombre">Nombre:</label>
                                     <input name="nombre" id="nombre" class="form-control" type="text"
-                                           placeholder="Ej: Alta Gerencia">
+                                           placeholder="Ej: Alta Gerencia" maxlength="50" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="descripcion">Descripción:</label>
                                     <input name="descripcion" id="descripcion" class="form-control" type="text"
-                                           placeholder="Ej: Estudio de la administración, liderazgo y dirección en altos cargos estratégicos de la empresa">
+                                           placeholder="Ej: Estudio de la administración, liderazgo y dirección en altos cargos estratégicos de la empresa"
+                                           maxlength="255">
                                 </div>
                                 <div class="d-flex justify-content-end">
                                     <input type="submit" class="btn btn-primary" value="Guardar">

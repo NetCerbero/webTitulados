@@ -23,16 +23,13 @@
                         <div class="form-group">
                             <label for="nombre">Nombre:</label>
                             <input name="nombre" id="nombre" class="form-control" type="text"
-                                   placeholder="Ej: Alta Gerencia"
-                                    value="{{$nivel->nombre}}"
-                            >
+                                   placeholder="Ej: Alta Gerencia" value="{{$nivel->nombre}}" maxlength="50" required>
                         </div>
                         <div class="form-group">
                             <label for="descripcion">Descripción:</label>
                             <input name="descripcion" id="descripcion" class="form-control" type="text"
                                    placeholder="Ej: Cargo en nivel estratégico de la empresa"
-                                   value="{{$nivel->descripcion}}"
-                            >
+                                   value="{{$nivel->descripcion}}" maxlength="255">
                         </div>
                         <div class="d-flex justify-content-end">
                             <input type="submit" class="btn btn-primary" value="Guardar Cambios">

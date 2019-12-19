@@ -23,12 +23,13 @@
                                 <div class="form-group">
                                     <label for="nombre">Nombre:</label>
                                     <input name="nombre" id="nombre" class="form-control" type="text"
-                                           placeholder="Ej: Recursos Humanos">
+                                           placeholder="Ej: Recursos Humanos" maxlength="50" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="descripcion">Descripción:</label>
                                     <input name="descripcion" id="descripcion" class="form-control" type="text"
-                                           placeholder="Ej: Gestión del personal o talento humano de la empresa">
+                                           placeholder="Ej: Gestión del personal o talento humano de la empresa"
+                                           maxlength="255">
                                 </div>
                                 <div class="d-flex justify-content-end">
                                     <input type="submit" class="btn btn-primary" value="Guardar">

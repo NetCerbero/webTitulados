@@ -14,8 +14,9 @@
                             <form method="POST" action="{{route('grado-academico.store')}}">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="grado">Nombre del grado académico</label>
-                                    <input name="grado" id="grado" class="form-control" type="text" placeholder="Ej: Licenciado(a)">
+                                    <label for="grado">Nombre:</label>
+                                    <input name="grado" id="grado" class="form-control" type="text" placeholder="Ej: Licenciado(a)"
+                                           maxlength="50" required>
                                 </div>
                                 <div class="d-flex justify-content-end">
                                     <input type="submit" class="btn btn-primary" value="Guardar">

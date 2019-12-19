@@ -21,14 +21,15 @@
                             <form method="POST" action="{{route('regimen.store')}}">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="nombre">Nombre del régimen:</label>
+                                    <label for="nombre">Nombre:</label>
                                     <input name="nombre" id="nombre" class="form-control" type="text"
-                                           placeholder="Ej: Privado">
+                                           placeholder="Ej: Privado" maxlength="50" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="descripcion">Descripción:</label>
                                     <input name="descripcion" id="descripcion" class="form-control" type="text"
-                                           placeholder="Ej: Empresas de capital privado con fines de lucro">
+                                           placeholder="Ej: Empresas de capital privado con fines de lucro"
+                                           maxlength="255" required>
                                 </div>
                                 <div class="d-flex justify-content-end">
                                     <input type="submit" class="btn btn-primary" value="Guardar">

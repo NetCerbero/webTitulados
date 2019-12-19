@@ -23,12 +23,12 @@
                                 <div class="form-group">
                                     <label for="nombre">Nombre:</label>
                                     <input name="nombre" id="nombre" class="form-control" type="text"
-                                           placeholder="Ej: Alta Gerencia">
+                                           placeholder="Ej: Alta Gerencia" maxlength="50" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="descripcion">Descripción:</label>
                                     <input name="descripcion" id="descripcion" class="form-control" type="text"
-                                           placeholder="Ej: Cargo en nivel estratégico de la empresa">
+                                           placeholder="Ej: Cargo en nivel estratégico de la empresa" maxlength="255">
                                 </div>
                                 <div class="d-flex justify-content-end">
                                     <input type="submit" class="btn btn-primary" value="Guardar">

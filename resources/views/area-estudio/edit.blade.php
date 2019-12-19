@@ -21,18 +21,15 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <label for="nombre">Nombre del área de estudio:</label>
+                            <label for="nombre">Nombre:</label>
                             <input name="nombre" id="nombre" class="form-control" type="text"
-                                   placeholder="Ej: Alta Gerencia"
-                                    value="{{$area->nombre}}"
-                            >
+                                   placeholder="Ej: Alta Gerencia" value="{{$area->nombre}}" maxlength="50" required>
                         </div>
                         <div class="form-group">
                             <label for="descripcion">Descripción:</label>
                             <input name="descripcion" id="descripcion" class="form-control" type="text"
                                    placeholder="Ej: Estudio de la administración, liderazgo y dirección en altos cargos estratégicos de la empresa"
-                                   value="{{$area->descripcion}}"
-                            >
+                                   value="{{$area->descripcion}}" maxlength="255">
                         </div>
                         <div class="d-flex justify-content-end">
                             <input type="submit" class="btn btn-primary" value="Guardar Cambios">

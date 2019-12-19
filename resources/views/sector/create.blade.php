@@ -21,14 +21,15 @@
                             <form method="POST" action="{{route('sector.store')}}">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="nombre">Nombre del sector:</label>
+                                    <label for="nombre">Nombre:</label>
                                     <input name="nombre" id="nombre" class="form-control" type="text"
-                                           placeholder="Ej: Hidrocarburos">
+                                           placeholder="Ej: Hidrocarburos" maxlength="50" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="descripcion">Descripción:</label>
                                     <input name="descripcion" id="descripcion" class="form-control" type="text"
-                                           placeholder="Ej: Empresas dedicadas a la explotación de recursos naturales hidrocarburíferos">
+                                           placeholder="Ej: Empresas dedicadas a la explotación de recursos naturales hidrocarburíferos"
+                                           maxlength="255">
                                 </div>
                                 <div class="d-flex justify-content-end">
                                     <input type="submit" class="btn btn-primary" value="Guardar">

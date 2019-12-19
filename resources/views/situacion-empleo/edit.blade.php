@@ -21,18 +21,16 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <label for="nombre">Nombre de la situación:</label>
+                            <label for="nombre">Nombre:</label>
                             <input name="nombre" id="nombre" class="form-control" type="text"
-                                   placeholder="Ej: Empleado Dependiente"
-                                    value="{{$situacion->nombre}}"
-                            >
+                                   placeholder="Ej: Empleado Dependiente" value="{{$situacion->nombre}}" maxlength="50"
+                                   required>
                         </div>
                         <div class="form-group">
                             <label for="descripcion">Descripción:</label>
                             <input name="descripcion" id="descripcion" class="form-control" type="text"
                                    placeholder="Ej: Persona que se encuentra trabajando para un empleador"
-                                   value="{{$situacion->descripcion}}"
-                            >
+                                   value="{{$situacion->descripcion}}" maxlength="255">
                         </div>
                         <div class="d-flex justify-content-end">
                             <input type="submit" class="btn btn-primary" value="Guardar Cambios">
