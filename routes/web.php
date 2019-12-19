@@ -41,4 +41,10 @@ Route::group(['middleware' => ['auth']], function () {
 
     // situacion de empleo
     Route::resource('/situacion-empleo','SituacionEmpleoController');
+
+    // area del cargo laboral
+    Route::resource('/area-cargo','AreaCargoController');
+
+    // nivel del cargo laboral
+    Route::resource('/nivel-cargo','NivelCargoController');
 });
