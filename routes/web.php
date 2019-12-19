@@ -30,4 +30,15 @@ Route::group(['middleware' => ['auth']], function () {
     // rutas sobre grados académicos
     Route::resource('/grado-academico','GradoAcademicoController');
 
+    // sectores industriales
+    Route::resource('/sector','SectorController');
+
+    // regimenes regulatorios
+    Route::resource('/regimen','RegimenController');
+
+    // area de estudio
+    Route::resource('/area-estudio','AreaEstudioController');
+
+    // situacion de empleo
+    Route::resource('/situacion-empleo','SituacionEmpleoController');
 });
