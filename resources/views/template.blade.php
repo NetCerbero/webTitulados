@@ -160,6 +160,21 @@
                         <li class=""><a href="{{url('/adm/create')}}" title="Dashboard v1"><span>Registrar</span></a></li>
                      </ul>
                   </li>
+
+                  <li class=" ">
+                     <a href="#dashboard3" title="Dashboard" data-toggle="collapse">
+                        <em class="icon-speedometer"></em>
+                        <span data-localize="sidebar.nav.DASHBOARD">Modalidad de graduación</span>
+                     </a>
+                     <ul class="sidebar-nav sidebar-subnav collapse" id="dashboard3">
+                        <li class=""><a href="{{url('/modalidad')}}" title="Dashboard v1"><span>Listar</span></a></li>
+                        <li class=""><a href="{{url('/modalidad/create/trabajo')}}" title="Dashboard v1"><span>Trabajo final, tesis</span></a></li>
+                        <li class=""><a href="{{url('/modalidad/create/examen')}}" title="Dashboard v1"><span>Examen de grado</span></a></li>
+                        <li class=""><a href="{{url('/modalidad/create/directo')}}" title="Dashboard v1"><span>Graduación directa</span></a></li>
+                        <li class=""><a href="{{url('/modalidad/create/externo')}}" title="Dashboard v1"><span>Estudiantes externos</span></a></li>
+                     </ul>
+                  </li>
+
                </ul><!-- END sidebar nav-->
             </nav>
          </div><!-- END Sidebar (left)-->

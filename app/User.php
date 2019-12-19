@@ -42,6 +42,10 @@ class User extends Authenticatable
         return $this->hasOne('App\Rol', 'id','role_id');
     }
 
+    public function modalidad(){
+        return $this->hasOne('App\Modalidad','guia_id');
+    }
+
     public function hasRole($id){
         $c = 0;
         $rsp = [

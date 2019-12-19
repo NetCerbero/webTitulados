@@ -30,4 +30,10 @@ Route::group(['middleware' => ['auth']], function () {
     // rutas sobre grados académicos
     Route::resource('/grado-academico','GradoAcademicoController');
 
+    Route::resource('/modalidad','ModalidadController');
+    Route::get('/modalidad/create/trabajo','ModalidadController@trabajo');
+    Route::get('/modalidad/create/examen','ModalidadController@examen');
+    Route::get('/modalidad/create/directo','ModalidadController@directo');
+    Route::get('/modalidad/create/externo','ModalidadController@externo');
+
 });

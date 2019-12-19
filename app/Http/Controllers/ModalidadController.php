@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Modalidad;
 use Illuminate\Http\Request;
+use App\User;
 
 class ModalidadController extends Controller
 {
@@ -14,7 +15,8 @@ class ModalidadController extends Controller
      */
     public function index()
     {
-        //
+        $datas = Modalidad::all();
+        return view('modalidad.index',compact('datas'));
     }
 
     /**
@@ -35,7 +37,8 @@ class ModalidadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Modalidad::create($request->all());
+        return redirect()->route('modalidad.index');
     }
 
     /**
@@ -81,5 +84,28 @@ class ModalidadController extends Controller
     public function destroy(Modalidad $modalidad)
     {
         //
+    }
+
+    public function trabajo(){
+        $docentes = User::all()->where('tipo',2);
+        $estudiantes = User::all()->whereIn('tipo',[1,3]);
+        $areas = [];
+        return view('modalidad.tesis_create',compact('docentes','areas','estudiantes'));
+    }
+
+    public function examen(){
+        $areas = [];
+        $estudiantes = User::all()->whereIn('tipo',[1,3]);
+        return view('modalidad.e_grado_create',compact('areas','estudiantes'));
+    }
+
+    public function directo(){
+        $estudiantes = User::all()->whereIn('tipo',[1,3]);
+        return view('modalidad.directa',compact('estudiantes'));
+    }
+
+    public function externo(){
+        $estudiantes = User::all()->whereIn('tipo',[1,3]);
+        return view('modalidad.externo',compact('estudiantes'));
     }
 }

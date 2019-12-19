@@ -24,7 +24,7 @@ class CreateModalidadsTable extends Migration
             $table->string('titulo')->nullable();
             $table->bigInteger('area_id')->nullable();
             $table->bigInteger('guia_id')->nullable();
-            //examen grado
+            //examen grado - sin titulo
 
             //graduacion directa
             $table->integer('forma')->nullable();
@@ -33,9 +33,11 @@ class CreateModalidadsTable extends Migration
             $table->integer('anio_titulacion')->nullable();
 
              // diferenciador
-             $table->char('tipo',1);
+            $table->char('tipo',1);
+            // 1 = tesis | 2 = examen grado | 3 = graduación directa | 4 = externo
             $table->timestamps();
             $table->softDeletes();
+            $table->bigInteger('user_id')->nullable();
         });
     }
 
