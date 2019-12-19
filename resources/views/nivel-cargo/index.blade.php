@@ -18,7 +18,7 @@
                 @endif
                 <div class="card card-default">
                     <div class="card-header">
-                        <h3>Lista de Niveles</h3>
+                        <h3>Lista de Niveles de Cargos</h3>
                         <hr>
                         <a href="{{route('nivel-cargo.create')}}" class="btn btn-success">
                             <span class="oi oi-plus"></span> Registrar nuevo nivel
