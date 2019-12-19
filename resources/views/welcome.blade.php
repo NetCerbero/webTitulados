@@ -72,7 +72,7 @@
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/">
-        <span class="oi oi-book"></span> Gestión Egresados - Administración de Empresas
+        <span class="oi oi-book"></span> Gestión de Egresados - ADM
     </a>
     <!-- <a class="btn btn-secondary float-right" href="/login">Iniciar Sesión</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
