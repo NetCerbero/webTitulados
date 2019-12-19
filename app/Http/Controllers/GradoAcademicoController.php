@@ -38,10 +38,7 @@ class GradoAcademicoController extends Controller
     {
         $gradoNuevo = GradoAcademico::create($request->all());
         $gradoNuevo->save();
-        return redirect()->route(
-            'grado-academico.show',
-            ['id' => $gradoNuevo->id]
-        );
+        return redirect()->route('grado-academico.show', $gradoNuevo->id);
     }
 
     /**
