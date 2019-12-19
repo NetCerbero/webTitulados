@@ -10,7 +10,9 @@
                <div class="col">
                   <!-- START card-->
                   <div class="card card-default">
-                     <div class="card-header">Stacked form</div>
+                     <div class="card-header">
+                         <h3>Crear nuevo rol</h3>
+                     </div>
                      <div class="card-body">
                         <form method="POST" action="{{route('rol.store')}}">
                             @csrf
@@ -23,7 +25,7 @@
                                <input name="abreviacion" class="form-control" type="text" placeholder="Abreviación del cu">
                             </div>
                             <div class="d-flex justify-content-end">
-                                <input type="submit" class="btn btn-primary">
+                                <input type="submit" class="btn btn-primary" value="Registrar">
                             </div>
                         </form>
                      </div>
