@@ -18,7 +18,7 @@
                     <div class="card-header">
                         <h3>Lista de Grados Académicos</h3>
                         <hr>
-                        <a href="/grado-academico/create" class="btn btn-success">
+                        <a href="{{route('grado-academico.create')}}" class="btn btn-success">
                             Registrar nuevo grado académico
                         </a>
                     </div>
@@ -55,9 +55,6 @@
                                 </tbody>
                             </table>
                         </div>
-                        <p>Hello, pixo, this is the index!</p>
-
-                        <p>Please go to create a new <a href="/grado-academico/create">gradoAcademico</a></p>
 
                     </div> <!-- card-body -->
                 </div> <!-- card -->
